@@ -1,0 +1,35 @@
+52 49 46 46 = 'RIFF'
+75 89 09 00 = file size = 0x00098975 = 625013 bytes (esclusi gli 8 di questa sezione)
+4D 44 4C 58 = file version = 'MDLX'
+
+4D 44 4C 48 = 'MDLH'
+08 00 00 00 = size (8 bytes)
+40 E2 01 00 00 00 20 41 (MDLH data)
+
+4D 44 4C 47 = 'MDLG'
+10 00 00 00 = size (16 bytes)
+40 40 0A 75 9A 7B 80 43 A9 77 84 9A C3 40 7B A8 = GUID
+
+4D 44 4C 4E = 'MDLN'
+09 00 00 00 = size (9 bytes)
+66 38 36 73 61 62 72 65 00 = 'f86sabre'
+
+50 41 52 41 = 'PARA'
+00 00 00 00 = size=0
+
+43 52 41 53 = 'CRAS'
+A4 05 00 00 size = 41989 bytes
+01 00 00 00 unknown 1
+08 00 00 00 unknown 2
+38 23 6F C4 frontLowerLeft x
+42 BE 06 C4 frontLowerLeft y
+8F A4 6D C4 frontLowerLeft z
+FE AC EE 44 length
+AA FD 88 44 height
+0C 62 9A 44 width
+2C 00 00 00 nodes count
+01 00 00 00 branches count
+04 00 00 00 nodes[1]
+0B 00 00 00 nodes[2]
+0F 00 00 00 ...
+...

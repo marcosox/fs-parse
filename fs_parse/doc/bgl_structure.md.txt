@@ -1,0 +1,36 @@
+# BGL file structure
+
+- file header (fixed size)
+    - magic number
+    - header size
+    - timestamplow
+    - timestamphi
+    - magic number 2
+    - sections count
+    - header QMIDS [ 8 ]
+- section1 (fixed size)
+    - section type
+    - subsections size (to be converted)
+    - subsections count
+    - offset of first subsection
+    - total subsections size
+- section2... (fixed size)
+    - section type
+    - ...
+- subsection1 (header) (one of two possible sizes depending on its parent section type)
+    - qmid A
+    - qmid B (only for some types of sections)
+    - number of records
+    - offset of first record
+    - size of all records
+- subsection2 (header)
+    - qmid A
+    - ...
+- subsection1 record 1 (variable size)
+    - section-specific data...
+- subsection1 record 2
+    - section-specific data...
+- subsection2 record 1
+    - section-specific data...
+- subsection2 record 2
+    - section-specific data...

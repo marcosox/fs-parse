@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created manually -->
+<FSData
+        version="9.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="bglcomp.xsd">
+    <SceneryObject
+            lat="31.95451772"
+            lon="-89.23370500"
+            alt="1234F"
+            altitudeIsAgl="TRUE"
+            pitch="67"
+            bank="30"
+            heading="162"
+            instanceId="{deadbeef-cafe-cafe-cafe-deadbeef0000}"
+            imageComplexity="VERY_DENSE">
+        <NoAutogenSuppression/>
+        <NoCrash/>
+        <NoFog/>
+        <NoShadow/>
+        <NoZWrite/>
+        <NoZTest/>
+        <Beacon
+                type="CIVILIAN"
+                baseType="SEA_BASE"/>
+    </SceneryObject>
+    <SceneryObject
+            lat="31.95451772"
+            lon="-89.23370500"
+            alt="1234F"
+            altitudeIsAgl="TRUE"
+            pitch="67"
+            bank="30"
+            heading="162"
+            instanceId="{deadbeef-cafe-cafe-cafe-deadbeef0000}"
+            imageComplexity="VERY_DENSE">
+        <NoAutogenSuppression/>
+        <NoCrash/>
+        <NoFog/>
+        <NoShadow/>
+        <NoZWrite/>
+        <NoZTest/>
+        <Beacon
+                type="CIVILIAN"
+                baseType="SEA_BASE"/>
+    </SceneryObject>
+</FSData>

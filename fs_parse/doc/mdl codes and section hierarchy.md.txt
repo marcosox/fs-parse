@@ -1,0 +1,119 @@
+# MDL sections
+
+## Description
+
+| section | description                               |
+|---------|-------------------------------------------|
+| RIFF    | General RIFF section (covers entire file) |
+| MDLH    | MDL header                                |
+| MDLG    | Object GUID                               |
+| MDLN    | Object friendly name                      |
+| SMAP    | Unknown                                   |
+| PARA    | Parameters Block                          |
+| CRAS    | Object crashbox                           |
+| BBOX    | Object boundingbox                        |
+| RADI    | Object radius                             |
+| MDLD    | Exterior Node Root                        |
+| TEXT    | Texture list                              |
+| MATE    | Material list                             |
+| INDE    | Triangle index list                       |
+| VERB    | Vertex buffer list                        |
+| VERT    | Vertex list                               |
+| TANS    | Tangent Space list (?)                    |
+| BMAP    | Bone Map (?)                              |
+| SKIN    | Skin weight list (?)                      |
+| TRAN    | Static transformation matrices            |
+| AMAP    | Animation Map                             |
+| SCEN    | Scenegraph Node Root                      |
+| SGAL    | Scenegraph Animation Linkage              |
+| SGVL    | Scenegraph Visibility Linkage             |
+| SGJC    | Scenegraph Joint Constraints              |
+| SGBR    | Scenegraph Bone Reference                 |
+| LODT    | LOD table                                 |
+| LODE    | LOD Entry                                 |
+| PART    | Part list                                 |
+| ANIB    | Animation Block                           |
+| PLAL    | Platform List                             |
+| PLAT    | Platform                                  |
+| REFL    | Attachpoint List                          |
+| REFP    | Attach point                              |
+| ATTO    | Attached objects list                     |
+| SHAM    | Shadow Model Root                         |
+
+## Hierarchy
+
+- `RIFF` (General RIFF section (covers entire file))
+    - `MDLH` (MDL header)
+    - `MDLG` (Object GUID)
+    - `MDLN` (Object friendly name)
+    - `SMAP` (Unknown)
+    - `PARA` (Parameters Block)
+    - `CRAS` (Object crashbox)
+    - `BBOX` (Object boundingbox)
+    - `RADI` (Object radius)
+    - `SHAM` (Shadow Model Root)
+    - `MDLD` (Exterior Node Root)
+        - `TEXT` (Texture list)
+        - `MATE` (Material list)
+        - `INDE` (Triangle index list)
+        - `VERB` (Vertex buffer list)
+            - `VERT` (Vertex list)
+            - `TANS` (Tangent Space list (?))
+            - `BMAP` (Bone Map (?))
+            - `SKIN` (Skin weight list (?))
+        - `TRAN` (Static transformation matrices)
+        - `AMAP` (Animation Map)
+        - `SCEN` (Scenegraph Node Root)
+        - `SGAL` (Scenegraph Animation Linkage)
+        - `SGVL` (Scenegraph Visibility Linkage)
+        - `SGJC` (Scenegraph Joint Constraints)
+        - `SGBR` (Scenegraph Bone Reference)
+        - `LODT` (LOD table)
+            - `LODE` (LOD Entry)
+                - `PART` (Part list)
+        - `ANIB` (Animation Block)
+        - `PLAL` (Platform List)
+            - `PLAT` (Platform)
+        - `REFL` (Attachpoint List)
+            - `REFP` (Attach point)
+        - `ATTO` (Attached objects list)
+
+## Parents
+
+| section | parent |
+|---------|--------|
+| RIFF    | None   |
+| MDLH    | RIFF   |
+| MDLG    | RIFF   |
+| MDLN    | RIFF   |
+| SMAP    | RIFF   |
+| PARA    | RIFF   |
+| CRAS    | RIFF   |
+| BBOX    | RIFF   |
+| RADI    | RIFF   |
+| MDLD    | RIFF   |
+| TEXT    | MDLD   |
+| MATE    | MDLD   |
+| INDE    | MDLD   |
+| VERB    | MDLD   |
+| VERT    | VERB   |
+| TANS    | VERB   |
+| BMAP    | VERB   |
+| SKIN    | VERB   |
+| TRAN    | MDLD   |
+| AMAP    | MDLD   |
+| SCEN    | MDLD   |
+| SGAL    | MDLD   |
+| SGVL    | MDLD   |
+| SGJC    | MDLD   |
+| SGBR    | MDLD   |
+| LODT    | MDLD   |
+| LODE    | LODT   |
+| PART    | LODE   |
+| ANIB    | MDLD   |
+| PLAL    | MDLD   |
+| PLAT    | PLAL   |
+| REFL    | MDLD   |
+| REFP    | REFL   |
+| ATTO    | MDLD   |
+| SHAM    | RIFF   |

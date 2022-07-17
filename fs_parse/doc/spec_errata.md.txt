@@ -1,0 +1,40 @@
+# BGL file specification errata
+
+These are the differences I found between actual BGL files found in the wild
+and the specification found at https://www.fsdeveloper.com/wiki/index.php/BGL_File_Format
+
+Some information have been found with the help of the Prepar3d spec
+at http://www.prepar3d.com/SDK/Environment%20Kit/BGL%20Compiler%20SDK/Compiling%20BGL.html
+
+### BGL header
+
+- filetime value can also be nanoseconds since epoch (1970)
+
+### All SceneryObject records
+
+- the FSX types have an additional UUID value after the "unknown"
+
+### Generic building records
+
+- 0x01 is the ID for FS9 types
+
+### Effect placement records
+
+- 0x0d is the ID for FSX effects, 0x04 (not present in the spec) is for fs9 effects
+- the effect parameters string is zero terminated **without** being aligned to the next word (2 bytes) boundary
+
+### Beacon records
+
+- there are two types of beacons
+    - FS9 types have ID 0x08
+    - FSX types have ID 0x11
+
+### Trigger records
+
+- records with 0x07 type id are probably FS9 triggers
+
+### Attached Object records
+
+- FS9 types have start id = 0x10 and end id = 0x1001
+- FS9 types don't have the instance id field
+- the record is not counted in the subsection records_count as a separate record.

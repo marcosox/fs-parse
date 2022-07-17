@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Created manually -->
+<FSData
+        version="9.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="bglcomp.xsd">
+    <SceneryObject
+            lat="31.95451772"
+            lon="-89.23370500"
+            alt="0F"
+            altitudeIsAgl="TRUE"
+            pitch="0"
+            bank="0"
+            heading="162"
+            instanceId="{deadbeef-cafe-cafe-cafe-deadbeef0001}"
+            imageComplexity="VERY_SPARSE">
+        <BiasXYZ
+                biasX="0"
+                biasY="0"
+                biasZ="0"/>
+        <LibraryObject
+                name="{deadbeef-cafe-cafe-cafe-deadbeef0002}"
+                scale="1.0"/>
+    </SceneryObject>
+    <SceneryObject
+            lat="31.95451772"
+            lon="-89.23370500"
+            alt="0F"
+            altitudeIsAgl="TRUE"
+            pitch="0"
+            bank="0"
+            heading="162"
+            instanceId="{deadbeef-cafe-cafe-cafe-deadbeef0001}"
+            imageComplexity="VERY_SPARSE">
+        <BiasXYZ
+                biasX="1"
+                biasY="1"
+                biasZ="1"/>
+        <LibraryObject
+                name="{deadbeef-cafe-cafe-cafe-deadbeef0002}"
+                scale="1.0"/>
+    </SceneryObject>
+</FSData>
